@@ -3,8 +3,8 @@ from model import simulate
 from animator import animate
 
 def main():
-    x, y, vx, vy, leg_contact = simulate(params)
-    animate(x, y, leg_contact, params)
+    x, y, vx, vy, ke, pe = simulate(params)
+    animate(x, y, vx, vy, ke, pe, params)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

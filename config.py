@@ -1,17 +1,21 @@
 # Adjustable parameters
+
 params = {
-    "mass_upper": 60.0,
-    "mass_lower": 5.0,
-    "spring_k": 12000.0,
-    "spring_rest_length": 1.0,
-    "damping": 300.0,
+    "dt": 0.01,
+    "total_time": 5.0,
+    "mass": 70.0,  # kg
     "gravity": 9.81,
-    "initial_y": 1.1,
-    "initial_x": 0.0,            # NEW: initial horizontal position
-    "initial_vy": -1.0,
-    "initial_vx": 2.5,           # NEW: horizontal velocity [m/s]
-    "leg_length": 1.0,
-    "stride_duration": 0.4,      # NEW: stride period (s)
-    "time_step": 0.01,
-    "total_time": 3.0
+    "spring_k": 5000.0,  # N/m
+    "spring_rest_length": 1.0,
+    "initial_y": 1.2,
+    "initial_vy": 0.0,
+    "initial_x": 0.0,
+    "initial_vx": 2.5,
+    "leg_angular_freq": 6.0,
+    "stride_length": 0.6,
+    "torso_length": 0.5,
+    "head_radius": 0.1,
+    "limb_length": 0.4,
+    "arm_swing_amp": 0.3,
+    "leg_swing_amp": 0.4
 }
